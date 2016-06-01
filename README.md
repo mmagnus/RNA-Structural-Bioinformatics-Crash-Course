@@ -20,16 +20,16 @@ Table of Contents
     * [2\. RNA secondary structure](#2-rna-secondary-structure)
     * [3\. RNA 3D structure analysis](#3-rna-3d-structure-analysis)
   * [RNA 3D modeling](#rna-3d-modeling)
-    * [Predict the structure using SimRNAweb/RNAComposer/MC\-SYM|MC\-Fold](#predict-the-structure-using-simrnawebrnacomposermc-symmc-fold)
-    * [Modeling using restraint](#modeling-using-restraint)
-    * [Assess the quality of your structure with mqapRNA](#assess-the-quality-of-your-structure-with-mqaprna)
-    * [Calculate RMSD between A and B](#calculate-rmsd-between-a-and-b)
+    * [Predict the structure (SimRNAweb/RNAComposer/MC\-SYM|MC\-Fold)](#predict-the-structure-simrnawebrnacomposermc-symmc-fold)
+    * [Modeling using restraint (SimRNAweb)](#modeling-using-restraint-simrnaweb)
+    * [Assess the quality of your structure (mqapRNA)](#assess-the-quality-of-your-structure-mqaprna)
+    * [Calculate RMSD between the native structure and models (PyMOL)](#calculate-rmsd-between-the-native-structure-and-models-pymol)
+    * [Refine models (QRNAS)](#refine-models-qrnas)
   * [RNA utils](#rna-utils)
-    * [ModeRNA \- a program for comparative RNA modeling](#moderna---a-program-for-comparative-rna-modeling)
-    * [ClaRNA](#clarna)
-    * [RNA Bricks](#rna-bricks)
-    * [NPDock \- protein\-RNA/DNA docking](#npdock---protein-rnadna-docking)
-    * [QRNAS \- structure refinement](#qrnas---structure-refinement)
+    * [Model RNA using a template of a homolog (comparative RNA modeling) (ModeRNA)](#model-rna-using-a-template-of-a-homolog-comparative-rna-modeling-moderna)
+    * [Classifier contatcs in RNA models (ClaRNA, PDBee)](#classifier-contatcs-in-rna-models-clarna-pdbee)
+    * [NPDock \- a protein\-RNA/DNA docking program](#npdock---a-protein-rnadna-docking-program)
+    * [QRNAS \- structure refinement of RNA structures](#qrnas---structure-refinement-of-rna-structures)
   * [Scientific software](#scientific-software)
     * [Biopython](#biopython)
     * [Pandas](#pandas)
@@ -41,8 +41,9 @@ Table of Contents
   * [Utils](#utils)
     * [Python](#python)
       * [subprocess](#subprocess)
+      * [joblib](#joblib)
     * [Terminal](#terminal)
-    * [Cluster](#cluster)
+    * [Using cluster](#using-cluster)
     * [Git](#git)
   * [More](#more)
     * [RNA motifs](#rna-motifs)
@@ -104,11 +105,13 @@ https://rmdb.stanford.edu/browse/
 ## Model RNA using a template of a homolog (comparative RNA modeling) (ModeRNA)
 http://genesilico.pl/moderna/
 ## Classifier contatcs in RNA models (ClaRNA, PDBee)
+- http://genesilico.pl/clarna/
+- http://rnapdbee.cs.put.poznan.pl
 ## RNA Bricks - a database of RNA 3D structure motifs and their contacts, both with themselves and with proteins
-http://iimcb.genesilico.pl/rnabrick
+- http://iimcb.genesilico.pl/rnabrick
 
 ## NPDock - a protein-RNA/DNA docking program
-http://genesilico.pl/NPDock/
+- http://genesilico.pl/NPDock/
 
 ## QRNAS - structure refinement of RNA structures
 QRNA 0.2 - Quick Refinement of Nucleic Acids 0.2
@@ -204,6 +207,8 @@ Practicals:
 ## Python
 ### subprocess
 err = subprocess.call(cmd, shell=True)
+### joblib
+https://pythonhosted.org/joblib/parallel.html
 ## Terminal
 The system console, computer console, root console, operator's console, or simply console is the text entry and display device for system administration messages, particularly those from the BIOS or boot loader, the kernel, from the init system and from the system logger. It is a physical device consisting of a keyboard and a screen, and traditionally is a text terminal, but may also be a graphical terminal. System consoles are generalized to computer terminals, which are abstracted respectively by virtual consoles and terminal emulators. Today communication with system consoles is generally done abstractly, via the standard streams (stdin, stdout, and stderr), but there may be system-specific interfaces, for example those used by the system kernel.
 
@@ -234,7 +239,7 @@ Practicals:
 - [ ] make an alias
 
 https://en.wikipedia.org/wiki/System_console
-## Cluster
+## Using cluster
 
 magnus@peyote2:~$ qstat -u '*'
 
