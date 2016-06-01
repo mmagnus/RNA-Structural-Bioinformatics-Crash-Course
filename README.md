@@ -92,26 +92,25 @@ Get ss from a structure (in the PDB format) 3E5C
 http://link.springer.com/protocol/10.1007%2F978-1-62703-709-9_12
 ## 3. RNA 3D structure analysis
 # RNA 3D modeling
-## Predict the structure using SimRNAweb/RNAComposer/MC-SYM|MC-Fold
+## Predict the structure (SimRNAweb/RNAComposer/MC-SYM|MC-Fold)
 <http://iimcb.genesilico.pl/SimRNAweb/>
-## Modeling using restraint
+## Modeling using restraint (SimRNAweb)
 https://rmdb.stanford.edu/browse/
-## Assess the quality of your structure with mqapRNA
+## Assess the quality of your structure (mqapRNA)
 <http://mqaprna-vm.dmz.genesilico.pl:8666/>
-## Calculate RMSD between A and B
-
-
+## Calculate RMSD between the native structure and models (PyMOL)
+## Refine models (QRNAS)
 # RNA utils
-## ModeRNA - a program for comparative RNA modeling
+## Model RNA using a template of a homolog (comparative RNA modeling) (ModeRNA)
 http://genesilico.pl/moderna/
-## ClaRNA
-## RNA Bricks
-http://iimcb.genesilico.pl/rnabricks/
+## Classifier contatcs in RNA models (ClaRNA, PDBee)
+## RNA Bricks - a database of RNA 3D structure motifs and their contacts, both with themselves and with proteins
+http://iimcb.genesilico.pl/rnabrick
 
-## NPDock - protein-RNA/DNA docking
+## NPDock - a protein-RNA/DNA docking program
 http://genesilico.pl/NPDock/
 
-## QRNAS - structure refinement
+## QRNAS - structure refinement of RNA structures
 QRNA 0.2 - Quick Refinement of Nucleic Acids 0.2
 
 Tutorial by Magnus https://docs.google.com/document/d/1ccbsZrnafBHJGEuXR2lvvMSh49VdTZMZfnyy0NFZxO8/edit
@@ -299,8 +298,15 @@ Secondary structure:
     GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU
     ((((((..((((.(((((....)))))....))))....((....)))))))) # 3E5C.pdb rnapdbee
     ((((((..((((.(((((....)))))....))))....((....)))))))) # mfold (-24.00) / 1. 
+    .(((((..((((.(((((....)))))....))))....((....))))))). # clarna 2.
 
 1. http://unafold.rna.albany.edu/results/9/16Jun01-09-40-08/16Jun01-09-40-08_1.b
+2. http://genesilico.pl/clarna/alg/cl_job/0e47a0b7-4702-40c0-a868-df4fd04990ad/result/
+
+-------------------------------------------------------------------------------
+
+SimRNAweb of 3e5c (seq + ss) http://genesilico.pl/SimRNAweb/jobs/d362b582-dd02-4971-ab25-6135c01c727b/
+
 ## TODO
 
 - use data from Rhiju to model any RNA
