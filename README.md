@@ -4,8 +4,6 @@ Marcin Magnus (/my family name/@genesilico.pl)
 
 (under development)
 
-**Start a Google Docs and do the practicals!**
-
 The sequence:
 
     GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU
@@ -96,25 +94,22 @@ http://link.springer.com/protocol/10.1007%2F978-1-62703-709-9_12
 # RNA 3D modeling
 ## Predict the structure (SimRNAweb/RNAComposer/MC-SYM|MC-Fold)
 <http://iimcb.genesilico.pl/SimRNAweb/>
+
+### RNAComposer
+http://rnacomposer.cs.put.poznan.pl/
+### MC-SYM|MC-FOLD
+Edit secondary structure to provide your own secondary structure
+
+Trick to run the tool:
+
+    http://www.major.iric.ca/cgi-bin/MC-Sym/mcsym.cgi?scriptgen=>seq|GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU|(((((((((((((((((((..))))))...)))))))..(((..)))))))))&action=Advanced
+
 ## Modeling using restraint (SimRNAweb)
 https://rmdb.stanford.edu/browse/
 ## Assess the quality of your structure (mqapRNA)
 <http://mqaprna-vm.dmz.genesilico.pl:8666/>
 ## Calculate RMSD between the native structure and models (PyMOL)
 ## Refine models (QRNAS)
-# RNA utils
-## Model RNA using a template of a homolog (comparative RNA modeling) (ModeRNA)
-http://genesilico.pl/moderna/
-## Classifier contatcs in RNA models (ClaRNA, PDBee)
-- http://genesilico.pl/clarna/
-- http://rnapdbee.cs.put.poznan.pl
-## RNA Bricks - a database of RNA 3D structure motifs and their contacts, both with themselves and with proteins
-- http://iimcb.genesilico.pl/rnabrick
-
-## NPDock - a protein-RNA/DNA docking program
-- http://genesilico.pl/NPDock/
-
-## QRNAS - structure refinement of RNA structures
 QRNA 0.2 - Quick Refinement of Nucleic Acids 0.2
 
 Tutorial by Magnus https://docs.google.com/document/d/1ccbsZrnafBHJGEuXR2lvvMSh49VdTZMZfnyy0NFZxO8/edit
@@ -130,6 +125,20 @@ https://docs.google.com/document/d/1ccbsZrnafBHJGEuXR2lvvMSh49VdTZMZfnyy0NFZxO8/
     $ ./QRNA -i pdbfile.pdb -o outfile.pdb
     It minimizes pdbfile.pdb and writes outfile.pdb every 100 steps. 
     All default parameters are used, which should be fine in most cases.
+
+# RNA utils
+## Model RNA using a template of a homolog (comparative RNA modeling) (ModeRNA)
+- http://genesilico.pl/moderna/
+
+## Classifier contatcs in RNA models (ClaRNA, PDBee)
+- http://genesilico.pl/clarna/
+- http://rnapdbee.cs.put.poznan.pl
+
+## Mine RNA 3D structure motifs and their contacts - both with themselves and with proteins (RNAbricks)
+- http://iimcb.genesilico.pl/rnabricks/
+
+## Dock RNA/DNA to a protein (NPDock)
+- http://genesilico.pl/NPDock/
 
 # Scientific software
 ## Biopython
@@ -172,7 +181,8 @@ Practicals:
 ## Matplotlib
 matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like wxPython, Qt, or GTK+. There is also a procedural "pylab" interface based on a state machine (like OpenGL), designed to closely resemble that of MATLAB. SciPy makes use of matplotlib. matplotlib was originally written by John D. Hunter, has an active development community, and is distributed under a BSD-style license. Michael Droettboom was nominated as matplotlib's lead developer shortly before John Hunter's death in 2012.
 
-https://en.wikipedia.org/wiki/Matplotlib
+- https://en.wikipedia.org/wiki/Matplotlib
+- http://matplotlib.org/1.4.0/users/pyplot_tutorial.html
 
 Practicals:
 
@@ -205,6 +215,15 @@ Practicals:
 - align two structures
 
 ## H2O
+H2O is open-source software for big-data analysis. It is produced by the start-up H2O.ai (formerly 0xdata), which launched in 2011 in Silicon Valley. The speed and flexibility of H2O allow users to fit hundreds or thousands of potential models as part of discovering patterns in data. With H2O, users can throw models at data to find usable information, allowing H2O to discover patterns. Using H2O, Cisco estimates each month 20 thousand models of its customers' propensities to buy.
+
+H2O's mathematical core is developed with the leadership of Arno Candel; after H2O was rated as the best "open-source Java machine learning project" by GitHub's programming members, Candel was named to the first class of "Big Data All Stars" by Fortune in 2014. The firm's scientific advisors are experts on statistical learning theory and mathematical optimization.
+
+The H2O software runs can be called from the statistical package R and other environments. It is used for exploring and analyzing datasets held in cloud computing systems and in the Apache Hadoop Distributed File System as well as in the conventional operating-systems Linux, Mac OS, and Microsoft Windows. The H2O software is written in Java, Python, and R. Its graphical-user interface is compatible with four popular browsers: Chrome, Safari, Firefox, and Internet Explorer.
+
+Programming languages The H2O software was written with three programming languages: Java (6 or later), Python (2.7.x), and R (3.0.0 or later).
+
+- https://en.wikipedia.org/wiki/H2O_%28software%29
 - doc for h2o https://h2o-release.s3.amazonaws.com/h2o/rel-turchin/6/docs-website/h2o-docs/index.html
 - doc for h2o and python https://h2o-release.s3.amazonaws.com/h2o/rel-turchin/6/docs-website/h2o-py/docs/index.html
 
@@ -293,7 +312,6 @@ The SMKbox riboswitch (also known as SAM-III) is a RNA element that regulates ge
 
 There are other known SAM-binding riboswitches such as SAM-I and SAM-II, but these appear to share no similarity in sequence or structure to SAM-III. http://rfam.xfam.org/family/RF01767#cite_note-pmid18806797-1
 
-
 -------------------------------------------------------------------------------
 
 Get clusters of 3e5c 
@@ -309,7 +327,10 @@ Secondary structure:
     ((((((..((((.(((((....)))))....))))....((....)))))))) # 3E5C.pdb rnapdbee
     ((((((..((((.(((((....)))))....))))....((....)))))))) # mfold (-24.00) / 1. 
     .(((((..((((.(((((....)))))....))))....((....))))))). # clarna 2.
-
+    (((((((((((((((((((..))))))...)))))))..(((..)))))))))  [view]  [edit]  [submit]
+    (((((((((((((((((((..)))))))...))))))..(((..)))))))))  [view]  [edit]  [submit]
+    (((((((((((((((((((..))))))..).))))))..(((..)))))))))  [view]  [edit]  [submit]
+    ((((((((((((((((((....)))))...)))))))..(((..)))))))))
 1. http://unafold.rna.albany.edu/results/9/16Jun01-09-40-08/16Jun01-09-40-08_1.b
 2. http://genesilico.pl/clarna/alg/cl_job/0e47a0b7-4702-40c0-a868-df4fd04990ad/result/
 
