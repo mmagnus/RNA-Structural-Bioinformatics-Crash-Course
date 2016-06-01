@@ -13,7 +13,6 @@ The sequence:
 Table of Contents
 =================
 
-  * [Table of Contents](#table-of-contents)
   * [READ](#read)
   * [RNA structural bioinformatics](#rna-structural-bioinformatics)
     * [0\. Formats](#0-formats)
