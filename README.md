@@ -203,6 +203,9 @@ Practicals:
 - show a structure as cartoon and ribbon
 - align two structures
 
+## H2O
+- doc for h2o https://h2o-release.s3.amazonaws.com/h2o/rel-turchin/6/docs-website/h2o-docs/index.html
+- doc for h2o and python https://h2o-release.s3.amazonaws.com/h2o/rel-turchin/6/docs-website/h2o-py/docs/index.html
 # Utils
 ## Python
 ### subprocess
