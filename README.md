@@ -1,41 +1,54 @@
-RNA Bioinformatics Crash Course
+RNA Structural Bioinformatics Crash Course
 -----------------------------------
+Marcin Magnus (<my family name>@genesilico.pl)
 
 (under development)
 
+**Start a Google Docs and do the practicals!**
+
 TODO:
 
-- use data from Rhiju!
+- use data from Rhiju to model any RNA
+
+READ:
+
+Chapter #1 Introduction (by Michael Levitt) & #2 Modeling RNA Molecules (by Leontis & Westhof) & #5 Template-Based and Template-Free Modeling of RNA 3D Structure: Inspirations from Protein Structure Modeling of RNA 3D Structure Analysis and Prediction http://link.springer.com/book/10.1007%2F978-3-642-25740-7
 
 The sequence:
 
-    GGAUCACGAGGGGGAGACCCCGGCAACCUGGGACGGACACCCAAGGUGCUCACACCGGAGACGGUGGAUCCGGCCCGAGAGGGCAACGAAGUCCGU
+    GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU
 
-# 1. Sequence
-What is a FASTA format? 
+# RNA structural bioinformatics
+## 1. RNA sequence analysis
+a) What is a FASTA format? 
 
-- [ ] 1. write the seq in the Fasta format
+1. write the seq in the Fasta format
 
 More: https://en.wikipedia.org/wiki/FASTA_format
 
-**RFAM** database is a collection of RNA families, each represented by multiple sequence alignments, consensus secondary structures and covariance models (CMs). (http://rfam.xfam.org/)
+b) **RFAM** database is a collection of RNA families, each represented by multiple sequence alignments, consensus secondary structures and covariance models (CMs). (http://rfam.xfam.org/)
 
-- [ ] 2. Which RNA family the seq belongs to?
-- [ ] 3. How many structures 
-- [ ] What members clan (CL00012) contains?
+1. Which RNA family the seq belongs to?
+1. How many structures 
+1. What members clan (CL00012) contains?
+1. Download the alignment and view it in JalView
 
-# 2. Secondary structure prediction
+## 2. RNA secondary structure
+
 Predict secondary structure for the sequence:
 
 http://genesilico.pl/comparna/
-## Get ss from a structure (in the PDB format)
 
+Get ss from a structure (in the PDB format) 3E5C
 
-# 3. Predict the structure using SimRNAweb/RNAComposer/MC-SYM|MC-Fold
+http://link.springer.com/protocol/10.1007%2F978-1-62703-709-9_12
+## 3. RNA 3D structure analysis
+# RNA 3D modeling
+## Predict the structure using SimRNAweb/RNAComposer/MC-SYM|MC-Fold
 <http://iimcb.genesilico.pl/SimRNAweb/>
-# 4. Assess the quality of your structure with mqapRNA
+## Assess the quality of your structure with mqapRNA
 <http://mqaprna-vm.dmz.genesilico.pl:8666/>
-# 5. Calculate RMSD between A and B
+## Calculate RMSD between A and B
 
 # Formats
 
@@ -122,6 +135,15 @@ Practicals:
 - ...
 
 ## SciKit
+scikit-learn (formerly scikits.learn) is a free software machine learning library for the Python programming language.[2] It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy. scikit-learn is largely written in Python, with some core algorithms written in Cython to achieve performance. Support vector machines are implemented by a Cython wrapper around LIBSVM; logistic regression and linear support vector machines by a similar wrapper around LIBLINEAR.
+
+- https://en.wikipedia.org/wiki/Scikit-learn
+- http://scikit-learn.org/stable/
+
+Practicals:
+
+- run http://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html#example-svm-plot-svm-regression-py
+
 ## IPython Notebook (Jupyter)
 The IPython Notebook is now known as the Jupyter Notebook. It is an interactive computational environment, in which you can combine code execution, rich text, mathematics, plots and rich media. For more details on the Jupyter Notebook, please see the Jupyter website.
 
@@ -192,5 +214,31 @@ https://en.wikipedia.org/wiki/Git_%28software%29
 https://en.wikipedia.org/wiki/Tetraloop
 
 # References
-
 Rfam 12.0: updates to the RNA families database. Eric P. Nawrocki, Sarah W. Burge, Alex Bateman, Jennifer Daub, Ruth Y. Eberhardt, Sean R. Eddy, Evan W. Floden, Paul P. Gardner, Thomas A. Jones, John Tate and Robert D. Finn Nucleic Acids Research (2014)  10.1093/nar/gku1063 
+
+Gorodkin, J., & Walker, J. M. (n.d.). RNA Sequence , Structure , and Function : Computational and Bioinformatic Methods IN Series Editor.
+# Books
+**RNA 3D Structure Analysis and Prediction** Neocles Leontis, Eric Westhof 2012 http://link.springer.com/book/10.1007/978-3-642-25740-7
+
+**RNA Sequence, Structure, and Function: Computational and Bioinformatic**, Methods Editors: Gorodkin, Jan, Ruzzo, Walter L. (Eds.) 2014 http://www.springer.com/us/book/9781627037082
+# Notes
+Crystal Structure of the SMK box (SAM-III) Riboswitch with SAM
+
+    >3E5C:A|PDBID|CHAIN|SEQUENCE
+    GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU
+
+http://www.rcsb.org/pdb/files/fasta.txt?structureIdList=3E5C
+
+-------------------------------------------------------------------------------
+
+The SMKbox riboswitch (also known as SAM-III) is a RNA element that regulates gene expression in bacteria.[2][3] The SMK box riboswitch is found in the 5' UTR of the MetK gene in lactic acid bacteria. The structure of this element changes upon binding to S-adenosyl methionine (SAM) to a conformation that blocks the shine-dalgarno sequence and blocks translation of the gene.
+
+There are other known SAM-binding riboswitches such as SAM-I and SAM-II, but these appear to share no similarity in sequence or structure to SAM-III. http://rfam.xfam.org/family/RF01767#cite_note-pmid18806797-1
+
+
+-------------------------------------------------------------------------------
+
+Get clusters of 3e5c 
+
+- http://ndbserver.rutgers.edu/service/ndb/atlas/stfeatures?searchTarget=ur0166&ftrType=nr&start=0&limit=0
+- http://rna.bgsu.edu/rna3dhub/nrlist/view/NR_all_19088.1
