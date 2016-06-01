@@ -1,18 +1,10 @@
 RNA Structural Bioinformatics Crash Course
 -----------------------------------
-Marcin Magnus (<my family name>@genesilico.pl)
+Marcin Magnus (/my family name/@genesilico.pl)
 
 (under development)
 
 **Start a Google Docs and do the practicals!**
-
-TODO:
-
-- use data from Rhiju to model any RNA
-
-READ:
-
-Chapter #1 Introduction (by Michael Levitt) & #2 Modeling RNA Molecules (by Leontis & Westhof) & #5 Template-Based and Template-Free Modeling of RNA 3D Structure: Inspirations from Protein Structure Modeling of RNA 3D Structure Analysis and Prediction http://link.springer.com/book/10.1007%2F978-3-642-25740-7
 
 The sequence:
 
@@ -59,7 +51,21 @@ Table of Contents
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
+# Start
+# READ:
+
+Chapter #1 Introduction (by Michael Levitt) & #2 Modeling RNA Molecules (by Leontis & Westhof) & #5 Template-Based and Template-Free Modeling of RNA 3D Structure: Inspirations from Protein Structure Modeling of RNA 3D Structure Analysis and Prediction http://link.springer.com/book/10.1007%2F978-3-642-25740-7
+
 # RNA structural bioinformatics
+## 0. Formats
+
+Which format to save:
+
+- [ ] a sequence
+- [ ] a secondary structure
+- [ ] a structure.
+
+
 ## 1. RNA sequence analysis
 a) What is a FASTA format? 
 
@@ -87,20 +93,13 @@ http://link.springer.com/protocol/10.1007%2F978-1-62703-709-9_12
 # RNA 3D modeling
 ## Predict the structure using SimRNAweb/RNAComposer/MC-SYM|MC-Fold
 <http://iimcb.genesilico.pl/SimRNAweb/>
+## Modeling using restraint
+https://rmdb.stanford.edu/browse/
 ## Assess the quality of your structure with mqapRNA
 <http://mqaprna-vm.dmz.genesilico.pl:8666/>
 ## Calculate RMSD between A and B
 
-# Formats
 
-Which format to save:
-
-- [ ] a sequence
-- [ ] a secondary structure
-- [ ] a structure.
-
-# Restrants
-https://rmdb.stanford.edu/browse/
 # RNA utils
 ## ModeRNA - a program for comparative RNA modeling
 http://genesilico.pl/moderna/
@@ -139,6 +138,7 @@ More:
 
 - https://en.wikipedia.org/wiki/Biopython
 - http://biopython.org/wiki/Getting_Started
+
 ## Pandas
 Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. Pandas is free software released under the three-clause BSD license.[2] The name is derived from the term "panel data", an econometrics term for multidimensional structured data sets.
 
@@ -263,6 +263,13 @@ Gorodkin, J., & Walker, J. M. (n.d.). RNA Sequence , Structure , and Function : 
 
 **RNA Sequence, Structure, and Function: Computational and Bioinformatic**, Methods Editors: Gorodkin, Jan, Ruzzo, Walter L. (Eds.) 2014 http://www.springer.com/us/book/9781627037082
 # Notes
+Seq in fasta format:
+
+    >seq
+    GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU
+
+-------------------------------------------------------------------------------
+
 Crystal Structure of the SMK box (SAM-III) Riboswitch with SAM
 
     >3E5C:A|PDBID|CHAIN|SEQUENCE
@@ -283,3 +290,17 @@ Get clusters of 3e5c
 
 - http://ndbserver.rutgers.edu/service/ndb/atlas/stfeatures?searchTarget=ur0166&ftrType=nr&start=0&limit=0
 - http://rna.bgsu.edu/rna3dhub/nrlist/view/NR_all_19088.1
+
+-------------------------------------------------------------------------------
+
+Secondary structure:
+
+    GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU
+    ((((((..((((.(((((....)))))....))))....((....)))))))) # 3E5C.pdb rnapdbee
+    ((((((..((((.(((((....)))))....))))....((....)))))))) # mfold (-24.00) / 1. 
+
+1. http://unafold.rna.albany.edu/results/9/16Jun01-09-40-08/16Jun01-09-40-08_1.b
+## TODO
+
+- use data from Rhiju to model any RNA
+
