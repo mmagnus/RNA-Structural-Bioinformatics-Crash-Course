@@ -9,21 +9,22 @@ Marcin Magnus (/my family name/@genesilico.pl)
 The sequence:
 
     GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU
-
+	
 Table of Contents
 =================
 
-    * [RNA Structural Bioinformatics Crash Course](#rna-structural-bioinformatics-crash-course)
+  * [Table of Contents](#table-of-contents)
+  * [READ](#read)
   * [RNA structural bioinformatics](#rna-structural-bioinformatics)
+    * [0\. Formats](#0-formats)
     * [1\. RNA sequence analysis](#1-rna-sequence-analysis)
     * [2\. RNA secondary structure](#2-rna-secondary-structure)
     * [3\. RNA 3D structure analysis](#3-rna-3d-structure-analysis)
   * [RNA 3D modeling](#rna-3d-modeling)
     * [Predict the structure using SimRNAweb/RNAComposer/MC\-SYM|MC\-Fold](#predict-the-structure-using-simrnawebrnacomposermc-symmc-fold)
+    * [Modeling using restraint](#modeling-using-restraint)
     * [Assess the quality of your structure with mqapRNA](#assess-the-quality-of-your-structure-with-mqaprna)
     * [Calculate RMSD between A and B](#calculate-rmsd-between-a-and-b)
-  * [Formats](#formats)
-  * [Restrants](#restrants)
   * [RNA utils](#rna-utils)
     * [ModeRNA \- a program for comparative RNA modeling](#moderna---a-program-for-comparative-rna-modeling)
     * [ClaRNA](#clarna)
@@ -32,6 +33,7 @@ Table of Contents
     * [QRNAS \- structure refinement](#qrnas---structure-refinement)
   * [Scientific software](#scientific-software)
     * [Biopython](#biopython)
+    * [Pandas](#pandas)
     * [NumPy](#numpy)
     * [Matplotlib](#matplotlib)
     * [SciKit](#scikit)
@@ -48,11 +50,11 @@ Table of Contents
   * [References](#references)
   * [Books](#books)
   * [Notes](#notes)
+    * [TODO](#todo)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
-# Start
-# READ:
+# READ
 
 Chapter #1 Introduction (by Michael Levitt) & #2 Modeling RNA Molecules (by Leontis & Westhof) & #5 Template-Based and Template-Free Modeling of RNA 3D Structure: Inspirations from Protein Structure Modeling of RNA 3D Structure Analysis and Prediction http://link.springer.com/book/10.1007%2F978-3-642-25740-7
 
