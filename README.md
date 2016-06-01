@@ -38,6 +38,7 @@ Table of Contents
     * [SciKit](#scikit)
     * [IPython Notebook (Jupyter)](#ipython-notebook-jupyter)
     * [PyMOL](#pymol)
+    * [H2O](#h2o)
   * [Utils](#utils)
     * [Python](#python)
       * [subprocess](#subprocess)
@@ -206,6 +207,7 @@ Practicals:
 ## H2O
 - doc for h2o https://h2o-release.s3.amazonaws.com/h2o/rel-turchin/6/docs-website/h2o-docs/index.html
 - doc for h2o and python https://h2o-release.s3.amazonaws.com/h2o/rel-turchin/6/docs-website/h2o-py/docs/index.html
+
 # Utils
 ## Python
 ### subprocess
@@ -217,29 +219,29 @@ The system console, computer console, root console, operator's console, or simpl
 
 Practicals:
 
-- [ ] show the contect of seq.fa file in your terminal
-- [ ] change permission to execute to this file (just doesn't make any sense)
-- [ ] install biopython/pymol from using terminal
-- [ ] login to a remote machine using ssh keys
-- [ ] mount a drive using sshfs
-- [ ] download from the terminal this file http://files.rcsb.org/download/1XJR.pdb
-- [ ] check the version of your system
-- [ ] add this `~/bin/` to your (python) path and reload the file with a new variable
-- [ ] grep a file...
-- [ ] open a seq.fa in vim and quite ;-)
-- [ ] take a look at the processes at your machine? (htop)
-- [ ] write a simple bash script to run `cat seq.fa`
-- [ ] go to your home and find `seq.fa`
-- [ ] gzip `seq.fa`
-- [ ] get the top of `seq.fa`
-- [ ] get the bottom of `seq.fa`
-- [ ] screen?
-- [ ] diff?
-- [ ] rsync?
-- [ ] crontab?
-- [ ] run mc and move to your home
-- [ ] http://www.skamphausen.de/cgi-bin/ska/CDargs ?
-- [ ] make an alias
+1. show the contect of seq.fa file in your terminal
+1. change permission to execute to this file (just doesn't make any sense)
+1. install biopython/pymol from using terminal
+1. login to a remote machine using ssh keys
+1. mount a drive using sshfs
+1. download from the terminal this file http://files.rcsb.org/download/1XJR.pdb
+1. check the version of your system
+1. add this `~/bin/` to your (python) path and reload the file with a new variable
+1. grep a file...
+1. open a seq.fa in vim and quite ;-)
+1. take a look at the processes at your machine? (htop)
+1. write a simple bash script to run `cat seq.fa`
+1. go to your home and find `seq.fa`
+1. gzip `seq.fa`
+1. get the top of `seq.fa`
+1. get the bottom of `seq.fa`
+1. screen?
+1. diff?
+1. rsync?
+1. crontab?
+1. run mc and move to your home
+1. http://www.skamphausen.de/cgi-bin/ska/CDargs ?
+1. make an alias
 
 https://en.wikipedia.org/wiki/System_console
 ## Using cluster
