@@ -49,6 +49,10 @@ Table of Contents
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
+    seq = sequence
+    ss = secondary structure
+	rmsd = [Root-mean-square deviation of atomic positions](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)
+
 # READ
 
 Chapter #1 Introduction (by Michael Levitt) & #2 Modeling RNA Molecules (by Leontis & Westhof) & #5 Template-Based and Template-Free Modeling of RNA 3D Structure: Inspirations from Protein Structure Modeling of RNA 3D Structure Analysis and Prediction http://link.springer.com/book/10.1007%2F978-3-642-25740-7
@@ -82,11 +86,15 @@ Predict secondary structure for the sequence.
 
 1. Use CompaRNA (http://genesilico.pl/comparna/) to check what is the best aviable tool at the moment.
 2. Get a secondary structure from a structure 3E5C (PDB database)
+3. Compare the predicted secondary structure to the native secondary structure
 
 More: http://link.springer.com/protocol/10.1007%2F978-1-62703-709-9_12
 ## 3. RNA 3D structure analysis and prediction
 ### Predict the structure (SimRNAweb/RNAComposer/MC-SYM|MC-Fold)
 <http://iimcb.genesilico.pl/SimRNAweb/>
+
+1. run SimRNAweb using the seq
+2. run SimRNAweb using the seq and ss
 
 #### RNAComposer
 http://rnacomposer.cs.put.poznan.pl/
@@ -102,6 +110,9 @@ https://rmdb.stanford.edu/browse/
 ### Assess the quality of your structure (mqapRNA)
 <http://mqaprna-vm.dmz.genesilico.pl:8666/>
 ### Calculate RMSD between the native structure and models (PyMOL)
+
+1. use PyMOL to align SimRNAweb models with the native structure
+
 ### Refine models (QRNAS)
 QRNA 0.2 - Quick Refinement of Nucleic Acids 0.2
 
