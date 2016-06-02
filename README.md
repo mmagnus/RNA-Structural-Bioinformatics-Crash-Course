@@ -84,7 +84,7 @@ b) **RFAM** database is a collection of RNA families, each represented by multip
 ## 2. RNA secondary structure
 Predict secondary structure for the sequence. 
 
-1. Use CompaRNA (http://genesilico.pl/comparna/) to check what is the best aviable tool at the moment.
+1. Use CompaRNA (http://genesilico.pl/comparna/) to check what is the best available tool at the moment.
 2. Get a secondary structure from a structure 3E5C (PDB database)
 3. Compare the predicted secondary structure to the native secondary structure
 
