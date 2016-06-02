@@ -16,18 +16,19 @@ Table of Contents
     * [0\. Formats](#0-formats)
     * [1\. RNA sequence analysis](#1-rna-sequence-analysis)
     * [2\. RNA secondary structure](#2-rna-secondary-structure)
-    * [3\. RNA 3D structure analysis](#3-rna-3d-structure-analysis)
-  * [RNA 3D modeling](#rna-3d-modeling)
-    * [Predict the structure (SimRNAweb/RNAComposer/MC\-SYM|MC\-Fold)](#predict-the-structure-simrnawebrnacomposermc-symmc-fold)
-    * [Modeling using restraint (SimRNAweb)](#modeling-using-restraint-simrnaweb)
-    * [Assess the quality of your structure (mqapRNA)](#assess-the-quality-of-your-structure-mqaprna)
-    * [Calculate RMSD between the native structure and models (PyMOL)](#calculate-rmsd-between-the-native-structure-and-models-pymol)
-    * [Refine models (QRNAS)](#refine-models-qrnas)
+    * [3\. RNA 3D structure analysis and prediction](#3-rna-3d-structure-analysis-and-prediction)
+      * [Predict the structure (SimRNAweb/RNAComposer/MC\-SYM|MC\-Fold)](#predict-the-structure-simrnawebrnacomposermc-symmc-fold)
+        * [RNAComposer](#rnacomposer)
+        * [MC\-SYM|MC\-FOLD](#mc-symmc-fold)
+      * [Modeling using restraint (SimRNAweb)](#modeling-using-restraint-simrnaweb)
+      * [Assess the quality of your structure (mqapRNA)](#assess-the-quality-of-your-structure-mqaprna)
+      * [Calculate RMSD between the native structure and models (PyMOL)](#calculate-rmsd-between-the-native-structure-and-models-pymol)
+      * [Refine models (QRNAS)](#refine-models-qrnas)
   * [RNA utils](#rna-utils)
     * [Model RNA using a template of a homolog (comparative RNA modeling) (ModeRNA)](#model-rna-using-a-template-of-a-homolog-comparative-rna-modeling-moderna)
     * [Classifier contatcs in RNA models (ClaRNA, PDBee)](#classifier-contatcs-in-rna-models-clarna-pdbee)
-    * [NPDock \- a protein\-RNA/DNA docking program](#npdock---a-protein-rnadna-docking-program)
-    * [QRNAS \- structure refinement of RNA structures](#qrnas---structure-refinement-of-rna-structures)
+    * [Mine RNA 3D structure motifs and their contacts \- both with themselves and with proteins (RNAbricks)](#mine-rna-3d-structure-motifs-and-their-contacts---both-with-themselves-and-with-proteins-rnabricks)
+    * [Dock RNA/DNA to a protein (NPDock)](#dock-rnadna-to-a-protein-npdock)
   * [Scientific software](#scientific-software)
     * [Biopython](#biopython)
     * [Pandas](#pandas)
@@ -37,11 +38,6 @@ Table of Contents
     * [IPython Notebook (Jupyter)](#ipython-notebook-jupyter)
     * [PyMOL](#pymol)
     * [H2O](#h2o)
-  * [Utils](#utils)
-    * [Python](#python)
-      * [subprocess](#subprocess)
-      * [joblib](#joblib)
-    * [Terminal](#terminal)
     * [Using cluster](#using-cluster)
     * [Git](#git)
   * [More](#more)
@@ -82,34 +78,31 @@ b) **RFAM** database is a collection of RNA families, each represented by multip
 1. Download the alignment and view it in JalView
 
 ## 2. RNA secondary structure
+Predict secondary structure for the sequence. 
 
-Predict secondary structure for the sequence:
+1. Use CompaRNA (http://genesilico.pl/comparna/) to check what is the best aviable tool at the moment.
+2. Get a secondary structure from a structure 3E5C (PDB database)
 
-http://genesilico.pl/comparna/
-
-Get ss from a structure (in the PDB format) 3E5C
-
-http://link.springer.com/protocol/10.1007%2F978-1-62703-709-9_12
-## 3. RNA 3D structure analysis
-# RNA 3D modeling
-## Predict the structure (SimRNAweb/RNAComposer/MC-SYM|MC-Fold)
+More: http://link.springer.com/protocol/10.1007%2F978-1-62703-709-9_12
+## 3. RNA 3D structure analysis and prediction
+### Predict the structure (SimRNAweb/RNAComposer/MC-SYM|MC-Fold)
 <http://iimcb.genesilico.pl/SimRNAweb/>
 
-### RNAComposer
+#### RNAComposer
 http://rnacomposer.cs.put.poznan.pl/
-### MC-SYM|MC-FOLD
+#### MC-SYM|MC-FOLD
 Edit secondary structure to provide your own secondary structure
 
 Trick to run the tool:
 
     http://www.major.iric.ca/cgi-bin/MC-Sym/mcsym.cgi?scriptgen=>seq|GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU|(((((((((((((((((((..))))))...)))))))..(((..)))))))))&action=Advanced
 
-## Modeling using restraint (SimRNAweb)
+### Modeling using restraint (SimRNAweb)
 https://rmdb.stanford.edu/browse/
-## Assess the quality of your structure (mqapRNA)
+### Assess the quality of your structure (mqapRNA)
 <http://mqaprna-vm.dmz.genesilico.pl:8666/>
-## Calculate RMSD between the native structure and models (PyMOL)
-## Refine models (QRNAS)
+### Calculate RMSD between the native structure and models (PyMOL)
+### Refine models (QRNAS)
 QRNA 0.2 - Quick Refinement of Nucleic Acids 0.2
 
 Tutorial by Magnus https://docs.google.com/document/d/1ccbsZrnafBHJGEuXR2lvvMSh49VdTZMZfnyy0NFZxO8/edit
@@ -226,7 +219,7 @@ Programming languages The H2O software was written with three programming langua
 - https://en.wikipedia.org/wiki/H2O_%28software%29
 - doc for h2o https://h2o-release.s3.amazonaws.com/h2o/rel-turchin/6/docs-website/h2o-docs/index.html
 - doc for h2o and python https://h2o-release.s3.amazonaws.com/h2o/rel-turchin/6/docs-website/h2o-py/docs/index.html
-
+- tutorials https://github.com/h2oai/h2o-tutorials/tree/master/tutorials
 # Utils
 ## Python
 ### subprocess
