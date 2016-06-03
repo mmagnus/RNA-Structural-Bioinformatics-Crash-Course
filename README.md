@@ -4,10 +4,6 @@ Marcin Magnus (/my family name/@genesilico.pl)
 
 (under development)
 
-The sequence:
-
-    GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU
-	
 Table of Contents
 =================
 
@@ -51,13 +47,18 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
     seq = sequence
     ss = secondary structure
-	rmsd = [Root-mean-square deviation of atomic positions](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)
+    rmsd = [Root-mean-square deviation of atomic positions](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)
 
 # READ
 
 Chapter #1 Introduction (by Michael Levitt) & #2 Modeling RNA Molecules (by Leontis & Westhof) & #5 Template-Based and Template-Free Modeling of RNA 3D Structure: Inspirations from Protein Structure Modeling of RNA 3D Structure Analysis and Prediction http://link.springer.com/book/10.1007%2F978-3-642-25740-7
 
 # RNA structural bioinformatics
+
+The sequence:
+
+    GUUCCCGAAAGGAUGGCGGAAACGCCAGAUGCCUUGUAACCGAAAGGGGGAAU
+
 ## 0. Formats
 
 Which format to save:
