@@ -49,9 +49,14 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
     ss = secondary structure
     rmsd = [Root-mean-square deviation of atomic positions](https://en.wikipedia.org/wiki/Root-mean-square_deviation_of_atomic_positions)
 
-# READ
+# MUST-READ
+
+**RNA bioinformatics**
 
 Chapter #1 Introduction (by Michael Levitt) & #2 Modeling RNA Molecules (by Leontis & Westhof) & #5 Template-Based and Template-Free Modeling of RNA 3D Structure: Inspirations from Protein Structure Modeling of RNA 3D Structure Analysis and Prediction http://link.springer.com/book/10.1007%2F978-3-642-25740-7
+
+**Python**
+Managing Your Biological Data with Python, Allegra Via, Kristian Rother, Anna Tramontano <https://www.crcpress.com/Managing-Your-Biological-Data-with-Python/Via-Rother-Tramontano/p/book/9781439880937>
 
 # RNA structural bioinformatics
 
