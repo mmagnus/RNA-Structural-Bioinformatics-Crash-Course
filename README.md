@@ -7,7 +7,7 @@ Marcin Magnus (/my family name/@genesilico.pl)
 Table of Contents
 =================
 
-  * [READ](#read)
+  * [MUST-READ](#must-read)
   * [RNA structural bioinformatics](#rna-structural-bioinformatics)
     * [0\. Formats](#0-formats)
     * [1\. RNA sequence analysis](#1-rna-sequence-analysis)
