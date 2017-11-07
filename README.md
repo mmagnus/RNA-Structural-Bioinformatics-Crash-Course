@@ -58,6 +58,8 @@ Chapter #1 Introduction (by Michael Levitt) & #2 Modeling RNA Molecules (by Leon
 **Python**
 Managing Your Biological Data with Python, Allegra Via, Kristian Rother, Anna Tramontano <https://www.crcpress.com/Managing-Your-Biological-Data-with-Python/Via-Rother-Tramontano/p/book/9781439880937>
 
+**LINUX** http://www.cs.sfu.ca/~ggbaker/reference/unix/
+
 # RNA structural bioinformatics
 
 The sequence:
