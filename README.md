@@ -251,7 +251,7 @@ The system console, computer console, root console, operator's console, or simpl
 Practicals:
 
 1. show the contect of seq.fa file in your terminal
-1. change permission to execute to this file (just doesn't make any sense)
+1. change permission to execute a file
 1. install biopython/pymol from using terminal
 1. login to a remote machine using ssh keys
 1. mount a drive using sshfs
