@@ -183,7 +183,7 @@ More:
 
 - https://en.wikipedia.org/wiki/NumPy
 - http://www.numpy.org/
-- https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
+- https://numpy.org/doc/stable/user/quickstart.html
 
 Practicals:
 
